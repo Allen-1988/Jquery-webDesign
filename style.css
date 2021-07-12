@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*最外層*/
+.wrap{
+    width: 1002px;
+    margin: auto;
+}
+
+/*第一段*/
+.SmallLink{    
+    background: #f6f6f6;    
+}
+.SmallLink ul {
+    font-size: 20px;  
+    display: flex;
+    justify-content: flex-end;    
+    padding: 3px;  
+}
+.SmallLink ul a{
+    text-decoration: none;
+}
+.SmallLink ul a:active {
+    color: red;
+}
+.fb a{
+    border-right: 1px solid silver;
+    color: #4460a0;
+}
+.tw a{
+    color: #00aaec;
+}
+
+
+/*第二段*/
+.BigLink{
+    display: flex;
+    justify-content: space-between;
+}
+.BigLink h1 a {    
+    background-image: url(https://github.com/Allen-9527/flex-finalhomework/blob/main/logo_03.jpg?raw=true);
+    display: block;
+    width: 170px;
+    height: 36px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;   
+}
+.Link {
+    display: flex;  
+    align-items: center;  
+}
+.Link li{
+    text-align: center;
+}
+.Link li a{
+    text-decoration: none;
+    color: #06c789;
+    font-weight: bold;   
+    font-size: 20px; 
+    display: block;
+    padding: 15px;  
+    border-bottom: 3px solid #fff;  
+    background: white;
+    overflow: hidden;
+}
+
+.Link a:active{
+    color: blue;
+    background: white;
+    border-bottom: 3px solid #66cdaa ;
+    
+}
+.Link li a:hover{
+    border-bottom: 3px solid #66cdaa ;
+    transition: 1.5s;
+}
+.Link ul{
+    display: none;
+    position: absolute;
+    z-index: 2;/*順序在Banner之上*/
+}
+
+
+/*第三段Banner*/
+.swiper-slide{  
+    background-image: url(https://raw.githubusercontent.com/Allen-9527/flex-finalhomework/main/banner.png)  ;        
+    height: 346px;
+    display: flex;
+    align-items: center;      
+}
+.swiper-slide h2{
+    font-size: 36px;
+    line-height: 1.5;
+    color: #fff;
+    padding: 30px;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+}
+
+
+/*第四段課程資訊*/
+.Course{      
+    display: flex;    
+}
+.course_item{
+    width: 300px;    
+    padding: 10px;
+    margin: 60px 0 50px 23px;
+    box-shadow: 0 5px 4px gray;
+}
+.course_item_img{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.course_item h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.course_item p{
+    text-align: left;
+    padding: 20px;
+}
+.course_item h2{
+    font-size: 19px;
+}
+.course_item ul{
+    padding-left: 60px;
+    list-style-type: circle;
+}
+/*lightbox設定*/
+.lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: blue !important;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.3 !important;
+    display: none;
+    
+  }
+
+/*第五段*/
+.PriceInfo{         
+    margin-bottom: 80px;
+}
+.PriceInfo h2{
+    text-align: center;
+    font-size: 27px;
+    padding: 30px;
+}
+.PriceInfo table{
+    width: 844px;
+    margin: auto;
+    text-align: left;    
+}
+.PriceInfo th , .PriceInfo td{
+    padding: 13px 50px 13px 20px;
+    border-top: 1px solid #b9b4b4;
+    border-bottom: 1px solid #b9b4b4;
+}
+.PriceInfo th{    
+    background: #f7f7f7;
+}
+.nice{
+    color: #42b392;
+}
+
+/*第六段*/
+.InputInfo{
+    
+    height: 406px;
+    background: linear-gradient(#00644b,#009770);
+    margin-bottom: 20px;
+}
+.info-title{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    line-height: 1.5;
+}
+.textinfo{
+    display: flex;
+    justify-content: space-between;
+}
+.Info{
+    margin: 25px 20px 0 20px;
+}
+.textinfo label{
+    color: white;
+}
+.text{    
+    margin-bottom: 10px;
+    padding: 9px 0 1px 10px;
+    width: 430px;
+    display: block;
+}
+.submit{
+    width: 71px;
+    height: 32px;
+    background: #00cc99;
+    border: none;
+    border-radius: 9%;
+    color: white;
+    margin-left: 80%
+}
+.submit:hover{
+    background: red;
+}
+
+/*第七段*/
+.footer{
+    display: flex;    
+    justify-content: space-between;
+    margin-bottom: 15px;    
+}
+
+.footer-text a{
+    color: brown;
+}
+
+.footer-text a:hover{
+    color: blue;
+}
+
+/*第八段 TOP滑動效果*/
+.top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}    
+/*top效果配合way2*/
+html{ scroll-behavior: smooth; }
+
