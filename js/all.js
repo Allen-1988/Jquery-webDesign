@@ -18,7 +18,7 @@ $(document).ready(function () {
       delay: 1000,
     },
     //翻轉效果
-     effect: 'coverflow',
+     effect: 'cube',
 
     // If we need pagination
     pagination: {
